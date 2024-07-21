@@ -6,3 +6,4 @@ sidebar_position: 1
 
 Let's discover **REVAMP's Android App Development**.
 
+<img src="/img/intro/banner.jpg" width="500"></img>
