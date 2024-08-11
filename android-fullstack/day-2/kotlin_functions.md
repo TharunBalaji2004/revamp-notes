@@ -4,11 +4,11 @@ slug: kotlin-functions
 title: Kotlin Functions
 ---
 
-### 1. Simple Functions
+## 1. Simple Functions
 
 Simple functions in Kotlin are declared using the `fun` keyword. They can take parameters and return a value.
 
-#### **Syntax**:
+### **Syntax**:
 ```kotlin
 fun functionName(parameter1: Type, parameter2: Type): ReturnType {
     // Function body
@@ -16,7 +16,7 @@ fun functionName(parameter1: Type, parameter2: Type): ReturnType {
 }
 ```
 
-#### **Example**:
+### **Example**:
 ```kotlin
 fun add(a: Int, b: Int): Int {
     return a + b
@@ -28,16 +28,16 @@ fun main() {
 }
 ```
 
-### 2. Compact or Single-Line Functions
+## 2. Compact or Single-Line Functions
 
 Kotlin allows you to define functions in a more concise way using single-line expressions. If the function consists of a single expression, you can omit the braces and the `return` keyword.
 
-#### **Syntax**:
+### **Syntax**:
 ```kotlin
 fun functionName(parameter1: Type, parameter2: Type): ReturnType = expression
 ```
 
-#### **Example**:
+### **Example**:
 ```kotlin
 fun multiply(a: Int, b: Int): Int = a * b
 
@@ -47,11 +47,11 @@ fun main() {
 }
 ```
 
-### 3. Lambda Expressions
+## 3. Lambda Expressions
 
 Lambda expressions are anonymous functions that can be treated as values. They are defined using curly braces `{}` and can be passed as arguments to higher-order functions.
 
-#### 1. Basic Lambda Expression
+### 1. Basic Lambda Expression
 
 A lambda expression in Kotlin is defined using curly braces `{}` and can take parameters and return a value. The parameters are declared before the `->` symbol, and the function body follows.
 
@@ -70,7 +70,7 @@ fun main() {
 }
 ```
 
-#### 2. Lambda with `it` Keyword
+### 2. Lambda with `it` Keyword
 
 When a lambda has only one parameter, Kotlin implicitly names it `it`. This can make the code more concise.
 
@@ -84,7 +84,7 @@ fun main() {
 }
 ```
 
-#### 3. Lambda with Explicit Parameter Types
+### 3. Lambda with Explicit Parameter Types
 
 You can explicitly specify the types of the parameters in a lambda expression if it's not clear from the context.
 
@@ -98,7 +98,7 @@ fun main() {
 }
 ```
 
-#### 4. Lambda Inside Higher-Order Functions
+### 4. Lambda Inside Higher-Order Functions
 
 Kotlin's standard library provides many higher-order functions like `map`, `filter`, `forEach`, etc., which take lambdas as arguments.
 
@@ -112,12 +112,43 @@ fun main() {
 }
 ```
 
+## 4. Extension Function
 
-### 4. Anonymous Function
+Extension functions in Kotlin are a powerful feature that allows you to extend the functionality of existing classes without modifying their source code. Essentially, they let you add new functions to a class, and these functions can be called as if they were part of the class itself.
+
+### **Syntax**:
+```kotlin
+// Define an extension function for the class
+fun Class.functionName(): ReturnType {
+    // Function Logic
+}
+```
+
+### **Example**:
+```kotlin
+// Define an extension function for the String class
+fun String.isPalindrome(): Boolean {
+    // this represents the reference of current value
+    return this == this.reversed()
+}
+
+fun main() {
+    val word = "racecar"
+    if (word.isPalindrome()) {
+        println("$word is a palindrome")
+    } else {
+        println("$word is not a palindrome")
+    }
+}
+
+// Output: racecar is a palindrome
+```
+
+## 5. Anonymous Function
 
 An anonymous function is a way to define a function without naming it. Unlike lambdas, anonymous functions can have explicit return types and can use labeled return statements.
 
-#### **Syntax**:
+### **Syntax**:
 ```kotlin
 val functionName = fun(parameter1: Type, parameter2: Type): ReturnType {
     // Function body
@@ -125,7 +156,7 @@ val functionName = fun(parameter1: Type, parameter2: Type): ReturnType {
 }
 ```
 
-#### **Example**:
+### **Example**:
 ```kotlin
 val sum = fun(a: Int, b: Int): Int {
     return a + b
