@@ -24,8 +24,8 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/android-fullstack/intro">
-            📱 Android Fullstack
+            to="/dsa-in-java/intro">
+            🧑‍💻 DSA in Java
           </Link>
         </div>
       </div>

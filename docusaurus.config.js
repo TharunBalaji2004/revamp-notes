@@ -61,7 +61,16 @@ const config = {
         routeBasePath: "android-fullstack",
         sidebarPath: './sidebars.js'
       }
-    ]
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "dsa-in-java",
+        path: "dsa-in-java",
+        routeBasePath: "dsa-in-java",
+        sidebarPath: './sidebars.js'
+      }
+    ],
   ],
 
   themeConfig:
@@ -77,6 +86,7 @@ const config = {
         },
         items: [
           {to: '/android-fullstack/intro', label: 'Android Fullstack', position: 'left'},
+          {to: '/dsa-in-java/intro', label: 'DSA in Java', position: 'left'},
           {
             href: 'https://github.com/TharunBalaji2004',
             label: 'GitHub',

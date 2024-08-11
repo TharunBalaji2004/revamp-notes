@@ -1,8 +1,8 @@
 {
-  "label": "Day 1: Android & Installation",
+  "label": "Day 1: Kotlin Basics",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "About Android's origin and its versions, Android Studio and SDK Installation"
+    "description": "About Android's UI Components and its types"
   }
 }

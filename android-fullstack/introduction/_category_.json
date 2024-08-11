@@ -1,0 +1,8 @@
+{
+  "label": "Intro: Android & Installation",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "About Android's origin and its versions, Android Studio and SDK Installation"
+  }
+}

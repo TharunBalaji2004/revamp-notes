@@ -1,8 +1,8 @@
 {
-  "label": "Day 3: Kotlin Flow & Functions",
-  "position": 3,
+  "label": "Day 3: Kotlin Classes & OOPS",
+  "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Control Flow (if, else, when) and Looping statements"
+    "description": "Kotlin Classes, its types and Object oriented concepts"
   }
 }

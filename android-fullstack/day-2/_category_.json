@@ -1,8 +1,8 @@
 {
-  "label": "Day 2: Kotlin Basics",
+  "label": "Day 2: Kotlin Flow & Functions",
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "About Android's UI Components and its types"
+    "description": "Control Flow (if, else, when) and Looping statements"
   }
 }

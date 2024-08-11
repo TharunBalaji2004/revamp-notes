@@ -25,6 +25,22 @@ for (i in 1..5) {
 // Output: 1 2 3 4 5
 ```
 
+### **Example with Range and Step value**
+```kotlin
+for (i in 1..10 step 2) {
+    println(i) 
+}
+// Output: 1 3 5 7 9
+```
+
+### **Example with Range and until**
+```kotlin
+for (i in 1 until 5) {
+    println(i) 
+}
+// Output: 1 2 3 4
+```
+
 #### **Example with Array**:
 ```kotlin
 val array = arrayOf("a", "b", "c")
@@ -114,4 +130,32 @@ for (i in 1..3) {
     }
 }
 ```
+### 6. **Repeat Function**
+The `repeat` function is a convenient way to execute a block of code a specified number of times. It’s particularly useful when you need to run some code multiple times without needing a loop variable.
 
+#### **Example**:
+```kotlin
+repeat(5) { 
+    println("Hello, Kotlin!")
+}
+/* Output:
+Hello, Kotlin!
+Hello, Kotlin!
+Hello, Kotlin!
+Hello, Kotlin!
+Hello, Kotlin!
+*/
+```
+
+```kotlin
+repeat(5) { index ->
+    println("This is repetition number $index")
+}
+/* Output:
+This is repetition number 0
+This is repetition number 1
+This is repetition number 2
+This is repetition number 3
+This is repetition number 4
+*/
+```
